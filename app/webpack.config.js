@@ -6,7 +6,7 @@ var path = require('path');
 
 var env = new webpack.DefinePlugin({
     'process.env': JSON.stringify(process.env),
-})
+});
 
 var plugins = [
     new ExtractTextPlugin('./public/css/styles.css', {
@@ -35,7 +35,7 @@ var plugins = [
         'IMGIX_BASE_URL',
         'API_URL'
     ]),
-]
+];
 
 if (process.env.NODE_ENV == 'production') {
     plugins = [
@@ -104,4 +104,4 @@ module.exports = {
         extensions: ['', '.js', '.jsx']
     },
     plugins: plugins,
-}
+};
