@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
-import { Link } from 'react-router'
-import TimeAgo from '../TimeAgo'
+import React, { Component } from 'react';
+import { Link } from 'react-router';
+import TimeAgo from '../TimeAgo';
 
 /**
  * Comment index component
@@ -26,9 +26,9 @@ class Comment extends Component {
                     {this.props.comment}
                 </div>
             </div>
-        )
+        );
     }
 
 }
 
-export default Comment
+export default Comment;
